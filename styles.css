@@ -324,8 +324,10 @@ body{font-size:clamp(15px,14px + .28vw,17.5px)}
 .member-section .section-title{margin-bottom:20px}
 .member-sections .member-section+.member-section{margin-top:40px;padding-top:36px;border-top:1px solid var(--line)}
 .member-empty{margin:0;color:var(--muted)}
+.student-card{display:grid;grid-template-columns:140px 1fr;gap:28px;align-items:center;padding:28px;background:#fff;border:1px solid var(--line);border-radius:8px}.student-portrait{width:140px;aspect-ratio:496/638;overflow:hidden;border-radius:6px;background:#e8edf4}.student-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}.student-profile h3{margin:0 0 4px;font:600 26px/1.2 var(--serif);letter-spacing:-.025em}.student-profile h3 small{color:var(--muted);font:500 15px var(--sans)}.student-role{margin:0 0 24px;color:var(--blue);font-size:14px;font-weight:750}.student-meta{display:grid;grid-template-columns:1.25fr 1fr;gap:30px}.student-meta h4{margin:0 0 7px;color:var(--ink);font-size:12px;letter-spacing:.1em;text-transform:uppercase}.student-meta p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
 html{scroll-padding-top:72px}
 @media(max-width:900px){html{scroll-padding-top:156px}}
+@media(max-width:620px){.student-card{grid-template-columns:1fr;align-items:start;padding:24px}.student-portrait{width:132px}.student-meta{grid-template-columns:1fr;gap:18px}}
 .home-album{display:block;padding:14px 16px 16px;background:#fff;border:1px solid var(--line);border-radius:7px;color:var(--ink);transition:.2s ease}
 .home-album:hover,.home-album:focus-visible{border-color:var(--navy);transform:translateY(-3px);outline:none}
 .home-album-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}
